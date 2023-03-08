@@ -65,3 +65,18 @@ h2{
     flex-wrap: wrap;
     gap: 20px;
 }
+.goals{
+    padding: 30px;
+    gap: 25px;
+    border-radius: 20px;
+    border: 1px solid #9e6ea9;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+footer{
+    padding: 60px;
+}
+footer>a{
+    text-decoration: none;
+}
