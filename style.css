@@ -3,7 +3,7 @@
     margin: 0;
 }
 body{
-    background-color: black;      
+    background-color: rgb(0, 0, 0);
 }
 .navbar{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -13,6 +13,9 @@ body{
     flex-wrap: wrap;
     padding: 20px;
     justify-content: flex-end;
+}
+.menu{
+    display: none;
 }
 a{
     text-decoration: none;
@@ -59,10 +62,20 @@ a{
     opacity: 0.3;
     position: fixed;
 }
+p{
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    color: #9e6ea9;
+}
+.date{
+    color: #9e6ea9;
+}
 @media screen and (max-width: 800px) {
-    .navbar{
+    .a_navbar{
         gap: 24px;
         font-size: 17px;
+        display: none;
     }
     .login{
         border: 0px;
@@ -72,17 +85,40 @@ a{
         border: 0px;
     }
     .logo{
-        margin-top: 50%;
         display: flex;
         width: 400px;
         height: auto;
         flex-wrap: wrap;
     }
-    .a_navbar{
-        gap: 10px;
-    }
     .login-signup{
         display: flex;
         flex-wrap: wrap;
+    }
+    .menu{
+        margin-top: -66px;
+        padding: 20px;
+        display: block;
+    }
+    .menu>img{
+        display: block;
+    }
+    .menuoption{
+        visibility: hidden;
+    }
+    .subbtn{
+        display: flex;
+        flex-direction: column;
+        visibility: hidden;
+    }
+    .subbutton{
+        background-color: #000000;
+        border-left: 1px solid #440053;
+        font-family: arial;
+        padding: 10px;
+        color: #f1b3ff;
+    }
+    .show {visibility: visible;}
+    .subbutton:hover{
+        background-color: #4a434b;
     }
 }

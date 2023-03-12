@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="website icon" class="tab_logo" type="png" href="images/docyardlogobg.png">
-    <title>DocYard</title>
+    <title>DocYard.co.in</title>
 </head>
 <body>
     <header>
@@ -15,20 +15,31 @@
                 <a href="#">Home</a>
                 <a href="about.html">About</a>
                 <a href="blog.html">Blog</a>
-                <a href="feedback.html">Feedback</a>
+                <a href="feedback.html" title="Hiii">Feedback</a>
             </div>
             <div class="login-signup">
                 <a href="signup.html">Sign Up</a>
                 <a href="login.html">Log In</a>
             </div>
         </div>
+        <div class="menu">
+            <span onclick="myFunction()" class="mainbutton"><img src="images/menu.png"></span>
+              <span class="subbtn" id="subbtn">
+            <span class="subbutton" id="subbutton"><a href="#" title="This is Home">Home</a></span>
+            <span class="subbutton" id="subbutton"><a href="about.html" title="This is About">About</a></span>
+            <span class="subbutton" id="subbutton"><a href="blog.html" title="This is Blog">Blog</a></span>
+            <span class="subbutton" id="subbutton" title="This is Feedback"><a href="feedback.html">Feedback</a></span>
+              </span>
+            </div>
     </header>
     <main>
         <div class="mainportion">
             <div class="blob"></div>
             <img class="logo" src="images/docyardbg.png">
         </div>
-        
     </main>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
